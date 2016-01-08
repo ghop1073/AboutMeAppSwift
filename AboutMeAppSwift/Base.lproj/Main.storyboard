@@ -1,25 +1,285 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hhY-Rg-LTi">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--About Me-->
+        <scene sceneID="bpJ-ah-ueV">
+            <objects>
+                <viewController title="About Me" id="hhY-Rg-LTi" customClass="ViewController" customModule="AboutMeAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jvM-Q9-Wme"/>
+                        <viewControllerLayoutGuide type="bottom" id="cae-vO-abR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XdG-so-bsc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jA6-hc-YKx">
+                                <rect key="frame" x="167" y="353" width="80" height="30"/>
+                                <state key="normal" title="Hello World"/>
+                                <connections>
+                                    <action selector="changeToBeach:" destination="hhY-Rg-LTi" eventType="touchUpInside" id="Cjf-Vp-snR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="suncrest" translatesAutoresizingMaskIntoConstraints="NO" id="oKW-JV-MaK">
+                                <rect key="frame" x="5" y="68" width="403" height="277"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.8756521263836976" blue="0.066728182788168611" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toBeach" id="Rmt-CC-aGb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQa-al-3us" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14" y="130"/>
+        </scene>
+        <!--End View Controller-->
+        <scene sceneID="kF6-QV-peJ">
+            <objects>
+                <viewController id="dUe-vC-HLb" customClass="EndViewController" customModule="AboutMeAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yZy-Bl-8Sv"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ZN-sM-Sdo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QEU-Jf-YQH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usl-AN-tL8">
+                                <rect key="frame" x="179" y="353" width="57" height="30"/>
+                                <state key="normal" title="The End"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thankyou" translatesAutoresizingMaskIntoConstraints="NO" id="5Fz-cQ-Rvc">
+                                <rect key="frame" x="6" y="79" width="400" height="252"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63977795198403264" green="1" blue="0.98664647840777364" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARy-Xy-vFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278" y="950"/>
+        </scene>
+        <!--Basketball View Controller-->
+        <scene sceneID="YQk-bQ-cO6">
+            <objects>
+                <viewController id="IIW-M2-38k" customClass="BasketballViewController" customModule="AboutMeAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="24b-pA-yic"/>
+                        <viewControllerLayoutGuide type="bottom" id="1lS-dV-ddh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dRB-7k-PIn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZq-lI-9aT">
+                                <rect key="frame" x="172" y="353" width="71" height="30"/>
+                                <state key="normal" title="Basketball"/>
+                                <connections>
+                                    <action selector="changeToEnd:" destination="IIW-M2-38k" eventType="touchUpInside" id="Wne-qg-rXV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="basketball" translatesAutoresizingMaskIntoConstraints="NO" id="tRQ-Km-ijs">
+                                <rect key="frame" x="6" y="48" width="402" height="276"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qza-Gv-x3f">
+                                <rect key="frame" x="6" y="391" width="402" height="331"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">My most favorite sport ever is basketball. I have played basketball ever since I was in kindergarden. I now play for a competitive basketball team that I have played with since I was in second grade. I travel out of state for basketball tournaments a lot. My basketball team has gone to Vegas, California, Florida, Arkansas, and New York for basketball tournaments. My team has been together since I was in 4th grade. We have great team chemistry.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.042120109851324083" green="1" blue="0.031803486228413003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="dUe-vC-HLb" kind="presentation" identifier="toEnd" id="s7r-EW-GgE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZX-IS-dRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="950"/>
+        </scene>
+        <!--Beach-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Beach" id="BYZ-38-t0r" customClass="BeachViewController" customModule="AboutMeAppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJd-TQ-vxS">
+                                <rect key="frame" x="186" y="353" width="43" height="30"/>
+                                <state key="normal" title="Beach"/>
+                                <connections>
+                                    <action selector="changeToHiking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iw9-8m-kic"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="floridabeach" translatesAutoresizingMaskIntoConstraints="NO" id="8WW-KI-Wqp">
+                                <rect key="frame" x="7" y="83" width="401" height="254"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Uk-X6-Onz">
+                                <rect key="frame" x="15" y="379" width="374" height="316"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The beach is almost a second home for me. My dad was born and raised in Florida, 5 houses from the beach. We go there almost every year. I often spend extra time in Florida while my family travels home to Utah. I then hop on a flight 2 weeks later to head home. We spend lots of time at the beach!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.073281607440504604" blue="0.99590923633731987" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="gqn-lt-s7n" kind="presentation" identifier="toHiking" id="G3P-WE-pEo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="505" y="130"/>
+        </scene>
+        <!--Steak View Controller-->
+        <scene sceneID="Vwd-Ck-2t4">
+            <objects>
+                <viewController id="tCV-9s-EfU" customClass="SteakViewController" customModule="AboutMeAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AeI-GY-Sbl"/>
+                        <viewControllerLayoutGuide type="bottom" id="C87-sy-pIi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hJ4-tj-HZL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ut2-cL-XaF">
+                                <rect key="frame" x="188" y="353" width="39" height="30"/>
+                                <state key="normal" title="Steak"/>
+                                <connections>
+                                    <action selector="changetoBasketball:" destination="tCV-9s-EfU" eventType="touchUpInside" id="Pyr-vB-qXM"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favoritefood" translatesAutoresizingMaskIntoConstraints="NO" id="6iv-uR-3qF">
+                                <rect key="frame" x="5" y="82" width="404" height="244"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NFI-fM-yxX">
+                                <rect key="frame" x="5" y="391" width="404" height="305"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">I love to eat food. I know it might not look like it, but I eat about 2,000 calories a day. Most of that I end up burning by running 8 miles everyday. My most favorite item of food to eat would have to be steak. I have steak at least 4 times a week. It goes best with a baked potato and corn. I also love to drink Mountain Dew with my steak dinner.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.2291232055603537" blue="0.10773693213594604" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="IIW-M2-38k" kind="presentation" identifier="toBasketball" id="Syf-QK-w8W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zqe-aX-ODM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733" y="950"/>
+        </scene>
+        <!--Golf View Controller-->
+        <scene sceneID="HWB-5M-Bh4">
+            <objects>
+                <viewController id="a7b-D6-M2T" customClass="GolfViewController" customModule="AboutMeAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Reo-96-NTi"/>
+                        <viewControllerLayoutGuide type="bottom" id="l3J-Wr-NAa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DQC-wd-LcV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6z-3H-Xnq">
+                                <rect key="frame" x="192" y="353" width="30" height="30"/>
+                                <state key="normal" title="Golf"/>
+                                <connections>
+                                    <action selector="changetoSteak:" destination="a7b-D6-M2T" eventType="touchUpInside" id="wN1-bo-ktG"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sdo-kr-VAz">
+                                <rect key="frame" x="7" y="402" width="356" height="294"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">My second favorite sport is golf. I just love being out there with my dad. It is a great place to bond with family members. Plus it is always quiet, so it is a great place to think. I wish to someday play Pebble Beach in California. Although it is $400 a round while it is $40 in Utah normally courses.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="golf" translatesAutoresizingMaskIntoConstraints="NO" id="OkR-HM-kKw">
+                                <rect key="frame" x="7" y="46" width="354" height="272"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75700991584119692" green="0.80873163704766204" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="tCV-9s-EfU" kind="presentation" identifier="toSteak" id="8JW-xp-2Eb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogz-vA-UjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240" y="950"/>
+        </scene>
+        <!--Hiking View Controller-->
+        <scene sceneID="68I-Ss-25T">
+            <objects>
+                <viewController id="gqn-lt-s7n" customClass="HikingViewController" customModule="AboutMeAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gdx-cq-8fd"/>
+                        <viewControllerLayoutGuide type="bottom" id="EHF-nt-rMI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gg0-wx-XLv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzF-Mf-6Qr">
+                                <rect key="frame" x="185" y="353" width="44" height="30"/>
+                                <state key="normal" title="Hiking"/>
+                                <connections>
+                                    <action selector="changeToGolf:" destination="gqn-lt-s7n" eventType="touchUpInside" id="fBj-yI-MGy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hiking" translatesAutoresizingMaskIntoConstraints="NO" id="6Ed-Bp-Wye">
+                                <rect key="frame" x="5" y="85" width="404" height="260"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Nk-Ac-VTc">
+                                <rect key="frame" x="5" y="378" width="404" height="317"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">I am so able to live in the beautiful state of Utah. I love all the different things I am able to to do. I love to go hiking in Utah most. I go hiking almost every weekend with my aunt. I have climbed Lone Peak and Olympus. Plus I have been to every single National Park in Utah.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.09467712188445554" green="0.97906960387113817" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="a7b-D6-M2T" kind="presentation" identifier="toGolf" id="clR-Ef-1KT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9GC-oo-lkW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="130"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="basketball" width="300" height="168"/>
+        <image name="favoritefood" width="275" height="183"/>
+        <image name="floridabeach" width="291" height="173"/>
+        <image name="golf" width="252" height="200"/>
+        <image name="hiking" width="275" height="183"/>
+        <image name="suncrest" width="275" height="183"/>
+        <image name="thankyou" width="256" height="197"/>
+    </resources>
 </document>

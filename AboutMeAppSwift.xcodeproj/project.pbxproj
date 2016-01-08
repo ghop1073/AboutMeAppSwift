@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3991FECB1C40401B00F498D2 /* BeachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3991FECA1C40401B00F498D2 /* BeachViewController.swift */; };
+		3991FECD1C40403B00F498D2 /* HikingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3991FECC1C40403B00F498D2 /* HikingViewController.swift */; };
+		3991FECF1C40405200F498D2 /* GolfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3991FECE1C40405200F498D2 /* GolfViewController.swift */; };
+		3991FED11C40406E00F498D2 /* SteakViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3991FED01C40406E00F498D2 /* SteakViewScreen.swift */; };
+		3991FED31C40408500F498D2 /* BasketballViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3991FED21C40408500F498D2 /* BasketballViewController.swift */; };
+		3991FED51C40466A00F498D2 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3991FED41C40466A00F498D2 /* EndViewController.swift */; };
 		3993AE441C3D9A56004DE321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3993AE431C3D9A56004DE321 /* AppDelegate.swift */; };
 		3993AE461C3D9A56004DE321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3993AE451C3D9A56004DE321 /* ViewController.swift */; };
 		3993AE491C3D9A56004DE321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3993AE471C3D9A56004DE321 /* Main.storyboard */; };
@@ -26,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3991FECA1C40401B00F498D2 /* BeachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeachViewController.swift; sourceTree = "<group>"; };
+		3991FECC1C40403B00F498D2 /* HikingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikingViewController.swift; sourceTree = "<group>"; };
+		3991FECE1C40405200F498D2 /* GolfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolfViewController.swift; sourceTree = "<group>"; };
+		3991FED01C40406E00F498D2 /* SteakViewScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteakViewScreen.swift; sourceTree = "<group>"; };
+		3991FED21C40408500F498D2 /* BasketballViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketballViewController.swift; sourceTree = "<group>"; };
+		3991FED41C40466A00F498D2 /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		3993AE401C3D9A56004DE321 /* AboutMeAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3993AE431C3D9A56004DE321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3993AE451C3D9A56004DE321 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,10 +89,8 @@
 		3993AE421C3D9A56004DE321 /* AboutMeAppSwift */ = {
 			isa = PBXGroup;
 			children = (
-				3993AE431C3D9A56004DE321 /* AppDelegate.swift */,
-				3993AE451C3D9A56004DE321 /* ViewController.swift */,
-				3993AE471C3D9A56004DE321 /* Main.storyboard */,
-				3993AE4A1C3D9A56004DE321 /* Assets.xcassets */,
+				3993AE641C3D9B6D004DE321 /* View */,
+				3993AE631C3D9B40004DE321 /* Controller */,
 				3993AE4C1C3D9A56004DE321 /* LaunchScreen.storyboard */,
 				3993AE4F1C3D9A56004DE321 /* Info.plist */,
 			);
@@ -94,6 +104,30 @@
 				3993AE5A1C3D9A56004DE321 /* Info.plist */,
 			);
 			path = AboutMeAppSwiftTests;
+			sourceTree = "<group>";
+		};
+		3993AE631C3D9B40004DE321 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3993AE451C3D9A56004DE321 /* ViewController.swift */,
+				3993AE431C3D9A56004DE321 /* AppDelegate.swift */,
+				3991FECA1C40401B00F498D2 /* BeachViewController.swift */,
+				3991FECC1C40403B00F498D2 /* HikingViewController.swift */,
+				3991FECE1C40405200F498D2 /* GolfViewController.swift */,
+				3991FED01C40406E00F498D2 /* SteakViewScreen.swift */,
+				3991FED21C40408500F498D2 /* BasketballViewController.swift */,
+				3991FED41C40466A00F498D2 /* EndViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3993AE641C3D9B6D004DE321 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3993AE471C3D9A56004DE321 /* Main.storyboard */,
+				3993AE4A1C3D9A56004DE321 /* Assets.xcassets */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3991FED51C40466A00F498D2 /* EndViewController.swift in Sources */,
+				3991FECB1C40401B00F498D2 /* BeachViewController.swift in Sources */,
 				3993AE461C3D9A56004DE321 /* ViewController.swift in Sources */,
+				3991FECD1C40403B00F498D2 /* HikingViewController.swift in Sources */,
+				3991FED11C40406E00F498D2 /* SteakViewScreen.swift in Sources */,
 				3993AE441C3D9A56004DE321 /* AppDelegate.swift in Sources */,
+				3991FED31C40408500F498D2 /* BasketballViewController.swift in Sources */,
+				3991FECF1C40405200F498D2 /* GolfViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +428,7 @@
 				3993AE5F1C3D9A56004DE321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3993AE601C3D9A56004DE321 /* Build configuration list for PBXNativeTarget "AboutMeAppSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +437,7 @@
 				3993AE621C3D9A56004DE321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

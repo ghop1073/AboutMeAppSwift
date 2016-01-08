@@ -1,31 +1,27 @@
 //
-//  ViewController.swift
+//  SteakViewScreen.swift
 //  AboutMeAppSwift
 //
-//  Created by Hopkins, Michael on 1/6/16.
+//  Created by Hopkins, Michael on 1/8/16.
 //  Copyright © 2016 Hopkins, Michael. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController
+class SteakViewController : UIViewController
 {
-
-    @IBAction func changeToBeach(sender: UIButton)
+    @IBAction func changetoBasketball(sender: UIButton)
     {
-        performSegueWithIdentifier("toBeach", sender : sender)
-        
+        performSegueWithIdentifier("toBasketball", sender: sender)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-
